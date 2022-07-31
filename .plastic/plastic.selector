@@ -1,0 +1,4 @@
+repository "Asiko@StudentField@cloud"
+  path "/"
+    br "/main"
+    co "/main"

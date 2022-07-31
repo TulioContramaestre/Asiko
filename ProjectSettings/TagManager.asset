@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - OneWayPlatform
+  - PlayerHead
+  - Non-grappable
+  - Weapon
+  - DeathTrigger
+  - Spawn0
+  - Spawn1
+  - Spawn2
+  - Spawn
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Environment
+  - Grapple Hook
+  - Background
+  - Enemy
+  - Arrow
+  - EnemyArrow
+  - OneWayPlatform
+  - InteractableProps
+  - PlayerRangedWeapon
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Backdrop
+    uniqueID: 4051943203
+    locked: 0
+  - name: Background
+    uniqueID: 3832766829
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Enemy
+    uniqueID: 110992563
+    locked: 0
+  - name: Player
+    uniqueID: 2347546395
+    locked: 0
+  - name: Grapple Hook
+    uniqueID: 758237491
+    locked: 0
+  - name: Particle Affect
+    uniqueID: 1433926589
+    locked: 0
+  - name: Subtitles
+    uniqueID: 409632877
+    locked: 0

@@ -1,0 +1,631 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4180062656317505624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4180062656317505626}
+  - component: {fileID: 4180062656317505627}
+  - component: {fileID: 946261272}
+  - component: {fileID: 790156973}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4180062656317505626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180062656317505624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4180062656317505627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180062656317505624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08826d7d54e64f26b9ef9d70fbc8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Retry
+    clip: {fileID: 8300000, guid: ed4d683f158d54dcaa4e960c5fd1d26f, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DeathBell
+    clip: {fileID: 8300000, guid: a4773abd9bc734dd8ad89c238bd34ca3, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.622
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Checkpoint
+    clip: {fileID: 8300000, guid: 385ca3db7e6594f14acce8366d64b939, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BGM - Village Home
+    clip: {fileID: 8300000, guid: 6fff7915de205463bb2ec169ed375762, type: 3}
+    output: {fileID: -4438511245503358616, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.363
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: BGM - Village
+    clip: {fileID: 8300000, guid: 793b951bb245b4267b7f472fadfd1e73, type: 3}
+    output: {fileID: -4438511245503358616, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.25
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: BGM - Before Dark Forest
+    clip: {fileID: 8300000, guid: 355aab0a97ab24f4184ef5bded3c2c2e, type: 3}
+    output: {fileID: -4438511245503358616, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.25
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: BGM - Dark Forest
+    clip: {fileID: 8300000, guid: 3ff30c49c54164effac28ac5e11d7875, type: 3}
+    output: {fileID: -4438511245503358616, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.316
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Cutscene - Start Level
+    clip: {fileID: 8300000, guid: f63d28b8169dd47d4b28ee4f68156b16, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Cutscene - CrainEncounter
+    clip: {fileID: 8300000, guid: 351ddf84c37054b079f96b6425bd21fc, type: 3}
+    output: {fileID: -4438511245503358616, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Cutscene - After Father's Death
+    clip: {fileID: 8300000, guid: 9c54ac701cd914008a8762ae58f33cd3, type: 3}
+    output: {fileID: -4438511245503358616, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Cutscene - Credits
+    clip: {fileID: 8300000, guid: 38c31be57e54e41be84f19bfe1785eeb, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.805
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Cutscene - Crain Returns
+    clip: {fileID: 8300000, guid: 144f7054152bf428fb4867218544fe39, type: 3}
+    output: {fileID: -4438511245503358616, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Crain Slash
+    clip: {fileID: 8300000, guid: 824d3b36a5ff6401d8ad43525bf2ae78, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Delayed Crain Slash
+    clip: {fileID: 8300000, guid: 7c964537752f849b882078a1801e0ba3, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ObjectFallBang
+    clip: {fileID: 8300000, guid: 631cf01757830488d82727f9aeaddfee, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Blood Squirt
+    clip: {fileID: 8300000, guid: 5722fa79c102841b0ae954125bc98e77, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.418
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Thud
+    clip: {fileID: 8300000, guid: b2027ab7c42ad4a8985a22c54694bee6, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Crain Growl
+    clip: {fileID: 8300000, guid: a68ea932fc69d4b4b94b82975de6fb77, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss Wizard Theme
+    clip: {fileID: 8300000, guid: f1747360d06244c358ad8e718e4feb81, type: 3}
+    output: {fileID: -4438511245503358616, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.25
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: General Crain Boss Theme
+    clip: {fileID: 8300000, guid: 951836495e8fb423081a89e50999d613, type: 3}
+    output: {fileID: -4438511245503358616, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Crickets
+    clip: {fileID: 8300000, guid: 1588b1a4f860044e8bd8a9049be1fd3d, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.299
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: RoaringFire
+    clip: {fileID: 8300000, guid: 7332c262457b74b5393ae836f14b7b99, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.232
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Fire
+    clip: {fileID: 8300000, guid: 9ac9ec24fc94e461b8dfa17bd6774116, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Grapple Hook Fire
+    clip: {fileID: 8300000, guid: 63d29307d5893452eb84eb47a56a0f90, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.17
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Grapple Hook Done
+    clip: {fileID: 8300000, guid: 63d29307d5893452eb84eb47a56a0f90, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.17
+    pitch: 1.71
+    loop: 0
+    source: {fileID: 0}
+  - name: Grapple Hook Retract
+    clip: {fileID: 8300000, guid: 9592618309cb34a8aad7f81aba270115, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.202
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Grapple Hook Retract Complete
+    clip: {fileID: 8300000, guid: 2bdee1270d0074bd781ac8e86e336454, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.237
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Grapple Hook Protract
+    clip: {fileID: 8300000, guid: 9592618309cb34a8aad7f81aba270115, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.202
+    pitch: 0.9
+    loop: 0
+    source: {fileID: 0}
+  - name: Grapple Hook Protract Complete
+    clip: {fileID: 8300000, guid: 2bdee1270d0074bd781ac8e86e336454, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.237
+    pitch: 0.9
+    loop: 0
+    source: {fileID: 0}
+  - name: Draw Sword
+    clip: {fileID: 8300000, guid: 54e0d00b6e6ed46648e8d34cd5fae1c5, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Draw Crossbow
+    clip: {fileID: 8300000, guid: e5a5005ee565b4ec2a673b200dfcb2fd, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Draw Flintlock
+    clip: {fileID: 8300000, guid: 32338c0552def4eb5b574e3831d1191c, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: HealthPotionPickup
+    clip: {fileID: 8300000, guid: eff567e80e211410e92473560890e74a, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Heal
+    clip: {fileID: 8300000, guid: 265ad398385d14f42a5e0248f9bed80f, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.23
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sword Hit Metal
+    clip: {fileID: 8300000, guid: d7d8092fde8614a05af0e687b8277a39, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sword Swing
+    clip: {fileID: 8300000, guid: 63f93f40d1ecb4ac793e4a9a6623bcf0, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.237
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Crossbow Fire
+    clip: {fileID: 8300000, guid: 1967c7fc76c7a7d419443f1a2d10af4c, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.107
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flintlock Fire
+    clip: {fileID: 8300000, guid: 94cf8f3b49815f84a8f043048527d96c, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.14
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Arrow Impact
+    clip: {fileID: 8300000, guid: 205b080028c59b941a44d75ea15ee1ba, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.277
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Thorn Growth
+    clip: {fileID: 8300000, guid: 509607bca661a864ba4b748ccfbae302, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.465
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Thorn Shot
+    clip: {fileID: 8300000, guid: 78c03b2e980ebd04c84e1c4bc868055b, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.465
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Vine Growth
+    clip: {fileID: 8300000, guid: 7a323daec1e8c2842913b170ce92a8ba, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.465
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Enough!
+    clip: {fileID: 8300000, guid: b3fa65fd5a3b7db4282083064f9341de, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.465
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Thorn Cut
+    clip: {fileID: 8300000, guid: 180792ac7ab249a4b867f4a7bf6b884e, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.465
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Thorn Thud
+    clip: {fileID: 8300000, guid: e96e7d30ac5eb8041917d43ed709c140, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.126
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Axe Hit
+    clip: {fileID: 8300000, guid: 988697f977a4d2444bb9bc565262fec9, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss3 Charge
+    clip: {fileID: 8300000, guid: 8b2f8ac13bc3231498c47c823cbc101e, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss3 Death
+    clip: {fileID: 8300000, guid: ca3efb4fe9e018a4ea8538ef16c4895a, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss3 Phase2 Switch
+    clip: {fileID: 8300000, guid: 2a408b238076c454da5389d8a218c843, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Rock Crumble
+    clip: {fileID: 8300000, guid: d54110cbb7adcdc4b9cfffa40e08c73a, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.256
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Rock Thud
+    clip: {fileID: 8300000, guid: f4259d85a75832142963edcb8cd04434, type: 3}
+    output: {fileID: -17435752512066750, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!114 &946261272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180062656317505624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: c1776158c1f1a4b34991c11e47f32a42, type: 2}
+    - {fileID: 11400000, guid: 03f63ebf51fff478ba15ed0606622210, type: 2}
+    - {fileID: 11400000, guid: 14571932abebf490bb1219e0b591610f, type: 2}
+    - {fileID: 11400000, guid: 3ef43fa66bdbf41c3b3e05df1cf78e59, type: 2}
+    - {fileID: 11400000, guid: 210446f1adfee4b1086d1320760dfafb, type: 2}
+    - {fileID: 11400000, guid: 79520ce697327479883084be8fe36b44, type: 2}
+    - {fileID: 11400000, guid: fb33e8d1a04e148a7a0a6458fd747dc8, type: 2}
+    - {fileID: 11400000, guid: cfb282188238642c9983e4995e32cb47, type: 2}
+    - {fileID: 11400000, guid: dc1952e2c39ea4529a4805d0f0f2ef81, type: 2}
+    - {fileID: 11400000, guid: 80c4e97bf120a460486fadcaa27aa4ff, type: 2}
+    - {fileID: 11400000, guid: 24d2b993b283e47c8994287a757b7a36, type: 2}
+    - {fileID: 11400000, guid: d38e4d4d0e15449d3918277d9bff2765, type: 2}
+    - {fileID: 11400000, guid: 3de4e3e2a43304b40983d228ded6d844, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: DeathBell
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: ObjectFallBang
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Cutscene - CrainEncounter
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: StopPlaying
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Cutscene - CrainEncounter
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Crain Slash
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Cutscene - Credits
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Cutscene - Start Level
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Blood Squirt
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Thud
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: StopPlaying
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Blood Squirt
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Cutscene - Crain Returns
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Crain Growl
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4180062656317505627}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Cutscene - After Father's Death
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &790156973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180062656317505624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e622e8ba630994d9ecb29608e01282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 53e7a5cf7950e4517b240213111f0d6f, type: 2}
+  masterSlider: {fileID: 0}
+  musicSlider: {fileID: 0}
+  soundSlider: {fileID: 0}
